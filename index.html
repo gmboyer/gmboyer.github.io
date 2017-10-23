@@ -16,6 +16,9 @@
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <!-- Social button styles -->
+    <link rel="stylesheet" href="css/social-circles.min.css">
+
   </head>
 
   <body id="page-top">
@@ -30,7 +33,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="https://gmboyer.github.io/gmboyer-cv.pdf" target="_blank">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#profile">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
@@ -51,18 +57,17 @@
         </div>
       </header>
 
-    <section id="about">
+    <section id="profile">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Title of project 1</h2>
-            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+            <h2>Profile</h2>
+            <p class="lead"> Grayson Boyer is a PhD candidate with a quantitative biogeochemistry background who seeks a career in industry data science.</p>
             <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-              <a href="https://github.com/gmboyer/IPL-R-WIP">GitHub</a>
+              <li>CV: <a href="https://gmboyer.github.io/gmboyer-cv.pdf">PDF</a></li>
+              <li>GitHub: <a href="https://github.com/gmboyer">gmboyer</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/grayson-boyer-05092ba4">grayson-boyer</a></li>
+              <li>Twitter: <a href="https://twitter.com/gmboyer">@gmboyer</a></li>
             </ul>
           </div>
         </div>
@@ -73,8 +78,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>All projects</h2>
-            <p class="lead">This is a great place to talk about your projects. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+            <h2>Projects</h2>
+            <p class="lead">Featured below are brief descriptions of several
+              projects I have been involved in that are relevant to data science.</p>
           </div>
         </div>
       </div>
@@ -82,67 +88,93 @@
       <div class="row">
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="https://nbviewer.jupyter.org/github/gmboyer/Lipids/blob/master/Lipids.ipynb"><img class="card-img-top" src="img/hotspring.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="https://nbviewer.jupyter.org/github/gmboyer/Lipids/blob/master/Lipids.ipynb">Thermophile lipid analysis</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="card-text"><b>Data processing, analysis, and visualization in R.</b>
+                I study single-celled microorganisms living
+                in hot springs of Yellowstone National Park, USA and elsewhere
+                around the world. One way that these heat-loving "thermophilic"
+                microbes have adapted to life in boiling water is by making
+                their outer layer, or cell membrane, resistant to heat or
+                chemical stress (such as acid). I look for any patterns in the
+                abundances and chemical structures of the lipid molecules that
+                compose cell membranes and allow these microbes to thrive in
+                extreme conditions. Most of my programming experience stems
+                from writing R scripts to automate tedious, repetitive tasks,
+                datamine output from other software, perform statistical analyses,
+                and visualize results.</p>
+                <p class="card-text">
+                  <a href="https://nbviewer.jupyter.org/github/gmboyer/Lipids/blob/master/Lipids.ipynb">Jupyter NBviewer</a>
+                  <a href="https://github.com/gmboyer/Lipids">GitHub</a>
+                </p>
             </div>
           </div>
         </div>
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="https://nbviewer.jupyter.org/github/gmboyer/HydrothermalPhotosynthesis/blob/master/HydrothermalPhotosynthesis.ipynb"><img class="card-img-top" src="img/photofringe.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="https://nbviewer.jupyter.org/github/gmboyer/HydrothermalPhotosynthesis/blob/master/HydrothermalPhotosynthesis.ipynb">Predicting microbial photosynthesis in hot springs</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+              <p class="card-text"><b>Machine learning in R.</b> This project was part of a successful proposal to NASA Exobiology
+                investigating the capacity of some microorganisms to perform photosynthesis in hot
+                springs. I took our sizable database of 2500+ hot spring samples and performed
+                multivariate analyses of geochemical measurements to create models for predicting
+                conditions amenable to photosynthesis. A sample is shown in the R Jupyter notebook demo
+                linked below which includes the use of conditional trees (ctree) in a training set to generate
+                models that are then used to predict values in a test set.</p>
+              <p class="card-text">
+                <a href="https://nbviewer.jupyter.org/github/gmboyer/HydrothermalPhotosynthesis/blob/master/HydrothermalPhotosynthesis.ipynb">Jupyter NBviewer</a>
+                <a href="https://github.com/gmboyer/HydrothermalPhotosynthesis">GitHub</a>
+              </p>
             </div>
           </div>
         </div>
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="https://nbviewer.jupyter.org/github/gmboyer/Charge-Balance-Jupyter-Notebooks/blob/master/ChargeBalance.ipynb"><img class="card-img-top" src="img/chargebalance.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="https://nbviewer.jupyter.org/github/gmboyer/Charge-Balance-Jupyter-Notebooks/blob/master/ChargeBalance.ipynb">Tool for calculating charge balance in water samples</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="card-text"><b>Data processing and text mining in Python and R.</b>
+                Checking for proper charge balance in water samples is a form of analytical quality control.
+                This Python Jupyter notebook takes tabular water chemistry measurements, runs
+                them through geochemical software called EQ3/6, then datamines charge balance
+                values from potentially thousands of output files. This is a collaborative
+                effort between myself, fellow graduate student Tucker Ely, and University of
+                Washington Professor Mark Ghiorso as a part of the NSF-funded
+                <a href="http://enki-portal.org/">ENKI project</a> to produce
+                freely available geochemical tools.</p>
+                <p class="card-text">
+                  <a href="https://nbviewer.jupyter.org/github/gmboyer/Charge-Balance-Jupyter-Notebooks/blob/master/ChargeBalance.ipynb">Jupyter NBviewer</a>
+                  <a href="https://github.com/gmboyer/Charge-Balance-Jupyter-Notebooks">GitHub</a>
+                </p>
             </div>
           </div>
         </div>
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="https://nbviewer.jupyter.org/github/gmboyer/HotSpringVsClimate/blob/master/GBS_climate_demo.ipynb"><img class="card-img-top" src="img/weather.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Four</a>
+                <a href="https://nbviewer.jupyter.org/github/gmboyer/HotSpringVsClimate/blob/master/GBS_climate_demo.ipynb">Comparing climate and continuous hot spring temperature data</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Five</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Six</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+              <p class="card-text"><b>Comparative analysis in R.</b> As part of a proposal effort in
+                2013, I compared weather station climate data to round-the-clock
+                temperature measurements of Great Boiling Springs in Gerlach, NV,
+                made by <a href="http://extremerobotics.lab.asu.edu/Bentobox/bentoData11.php">BENTO</a> box sensors. The goal was to
+                demonstrate the possibility of identifying patterns in hot
+                spring temperature that might indicate influence from air temperature
+                and precipitation.</p>
+                <p class="card-text">
+                  <a href="https://nbviewer.jupyter.org/github/gmboyer/HotSpringVsClimate/blob/master/GBS_climate_demo.ipynb">Jupyter NBviewer</a>
+                  <a href="https://github.com/gmboyer/HotSpringVsClimate">GitHub</a>
+                </p>
             </div>
           </div>
         </div>
@@ -157,8 +189,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <h2>Contact me</h2>
+              <p class="lead">
+                <a class="icon-github social-button borderless static" href="https://github.com/gmboyer"></a>
+                &emsp;<a class="icon-linkedin social-button borderless static" href="https://www.linkedin.com/in/grayson-boyer-05092ba4/"></a>
+                &emsp;<a class="icon-twitter social-button borderless static" href="https://twitter.com/gmboyer"></a>
+              </p>
           </div>
         </div>
       </div>
